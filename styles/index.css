@@ -1,0 +1,95 @@
+* {
+    padding: 0;
+    cursor: none;
+    margin: 0;
+}
+
+@font-face {
+    font-family: ecrituredate;
+    src: url(/fonts/Breathney\ Demo.ttf);
+}
+
+@font-face {
+    font-family: ecriture;
+    src: url(/fonts/Sweet\ Chocolate.otf);
+}
+
+body {
+    margin: 0px;
+    overflow-x: hidden;
+}
+
+main {
+    position: relative;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+}
+
+main::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(/images/paper.avif);
+    background-size: cover;
+    opacity: 0.6;
+    z-index: -1;
+}
+
+.gridgauche {
+    gap: 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+.millieu {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+.gridedroit {
+    gap: 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+.montagne {
+    margin-top: 400px;
+    width: 300px;
+    margin-left: -102px;
+    height: auto;
+    transform: rotate(90deg);
+    /* Fait pivoter l'image de 90 degrés */
+}
+
+.tachecafe {
+    width: 300px;
+    height: auto;
+}
+
+.postit {
+    width: 300px;
+    height: auto;
+}
+
+.note {
+    margin-right: 90px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.date {
+    font-family: ecrituredate;
+    text-align: left;
+    text-decoration: underline;
+}
+
+.ecriture {
+    font-family: ecriture;
+    font-size: 22px;
+}
