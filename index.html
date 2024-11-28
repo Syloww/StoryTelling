@@ -38,7 +38,9 @@
 
 <body>
     <div class="circle"></div>
-    <video src="partie1 juste à temp.mp4" autoplay></video>
+    <div class="video">
+        <video src="partie1 juste à temp.mp4" autoplay muted="false" oncanplay="this.muted = false; this.volume = 1.0;" type="video/mp4"></video>
+    </div>
     <main>
         <section class="gridgauche">
             <img src="images/mountaing-drawing-2.png" alt="" class="montagne">
