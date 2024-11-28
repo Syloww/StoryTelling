@@ -93,3 +93,8 @@ main::before {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 22px;
 }
+.manuscrit{
+    font-family: ecrituredate;
+    text-align: left;
+    text-decoration: none;
+}
