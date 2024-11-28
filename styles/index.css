@@ -38,7 +38,7 @@ main::before {
 }
 
 .gridgauche {
-    gap: 400px;
+    gap: 700px;
     display: flex;
     font-size: 12;
     flex-direction: column;
@@ -51,7 +51,7 @@ main::before {
 }
 
 .gridedroit {
-    gap: 600px;
+    gap: 700px;
     display: flex;
     flex-direction: column;
 }
