@@ -38,7 +38,7 @@ main::before {
 }
 
 .gridgauche {
-    gap: 200px;
+    gap: 400px;
     display: flex;
     flex-direction: column;
 }
