@@ -12,10 +12,28 @@
     <meta name="robots" content="index, follow">
     <meta name="geo.region" content="fr">
     <meta name="copyright" content="JusteATemp@2024">
-
+    <!-- Lenis -->
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.33/dist/lenis.min.js"></script>
+    <!-- CSS -->
     <link rel="stylesheet" href="styles/index.css">
-    <link rel="stylesheet" href="styles/lenis.css">
     <link rel="stylesheet" href="styles/cursor.css">
+    <style>
+        html.lenis {
+            height: auto;
+        }
+
+        .lenis.lenis-smooth {
+            scroll-behavior: auto;
+        }
+
+        .lenis.lenis-smooth [data-lenis-prevent] {
+            overscroll-behavior: contain;
+        }
+
+        .lenis.lenis-stopped {
+            overflow: hidden;
+        }
+    </style>
 </head>
 
 <body>
@@ -236,7 +254,7 @@
                         Je souris encore en écrivant ces lignes. Pas parce que je
                         vais mieux, mais parce que je sais que bientôt, ça ne fera
                         plus mal. Bientôt, ce sera fini.Et pour la première fois
-                        depuis longtemps, je me sens légère.                       
+                        depuis longtemps, je me sens légère.
                     </p>
                 </div>
             </div>
@@ -251,8 +269,6 @@
 
     <!-- CURSOR -->
     <script src="js/cursor.js"></script>
-    <!-- intégration de lenis -->
-    <!-- quelque styles dans /styles/lenis.css -->
     <script src="https://unpkg.com/@studio-freight/lenis@1.0.33/dist/lenis.min.js"></script>
     <script>
         const lenis = new Lenis({
