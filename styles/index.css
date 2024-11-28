@@ -51,7 +51,7 @@ main::before {
 }
 
 .gridedroit {
-    gap: 200px;
+    gap: 600px;
     display: flex;
     flex-direction: column;
 }
