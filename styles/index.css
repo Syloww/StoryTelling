@@ -17,6 +17,37 @@ body {
     margin: 0px;
     overflow-x: hidden;
 }
+.chargement {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #0c0c0c;
+    z-index: 9 !important;
+
+    /* Centrage Flexbox */
+    display: flex;
+    justify-content: center; /* Centrer horizontalement */
+    align-items: center;   /* Centrer verticalement */
+}
+#sablier{
+    animation: chargement 4s infinite;
+}
+@keyframes chargement {
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(180deg);
+    }
+    50%{
+        transform: rotate(-180deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
 .video {
     height: 100vh;
     display: flex;
