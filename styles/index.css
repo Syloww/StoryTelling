@@ -114,7 +114,6 @@ main::before {
     align-items: center;
 }
 .audio {
-    display: none;
     padding: 15px;
     background-color: #000;
     border-radius: 100%;
