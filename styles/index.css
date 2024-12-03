@@ -108,7 +108,7 @@ main::before {
 }
 .dateaudio{
     padding-top: 20px;
-    display: flex;
+    display: flex !important;
     gap: 30px;
     text-align: center;
     align-items: center;
