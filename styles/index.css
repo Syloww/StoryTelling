@@ -106,3 +106,14 @@ main::before {
     text-align: left;
     text-decoration: none;
 }
+.audio {
+    padding: 15px;
+    background-color: #000;
+    border-radius: 100%;
+    width: fit-content;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+.audio:active {
+    transform: scale(0.9);
+}
