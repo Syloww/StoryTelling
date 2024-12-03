@@ -107,13 +107,14 @@ main::before {
     text-decoration: none;
 }
 .dateaudio{
-    padding-top: 20px;
+    padding-top: 15px;
     display: flex !important;
     gap: 30px;
     text-align: center;
     align-items: center;
 }
 .audio {
+    display: none;
     padding: 15px;
     background-color: #000;
     border-radius: 100%;
