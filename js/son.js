@@ -1,4 +1,3 @@
-// Créer un nouvel objet Audio avec le fichier audio
 const audio1 = new Audio('./audio/audio1.mp3');
 const audio2 = new Audio('./audio/audio2.mp3');
 const audio3 = new Audio('./audio/audio3.mp3');
@@ -11,7 +10,6 @@ const audio9 = new Audio('./audio/audio9.mp3');
 const audio10 = new Audio('./audio/audio10.mp3');
 const audio11 = new Audio('./audio/audio11.mp3');
 
-// Ajouter un événement au clic
 document.querySelector("#audio1").addEventListener("click", toggleSon1);
 document.querySelector("#audio2").addEventListener("click", toggleSon2);
 document.querySelector("#audio3").addEventListener("click", toggleSon3);
