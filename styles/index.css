@@ -158,3 +158,120 @@ main::before {
 .audio:active {
     transform: scale(0.9);
 }
+/* Ajoutez ces règles à votre CSS existant */
+
+/* Effet de papier vieux avec bords irréguliers */
+.note {
+    position: relative;
+    background: #fffdf5;
+    border: 1px solid #e8e0d0;
+    box-shadow: 
+        0 2px 5px rgba(0,0,0,0.1),
+        /* Ombre portée pour effet 3D */
+        0 0 0 1px #f5f0e4 inset, /* Bordure intérieure */
+        0 0 30px rgba(0,0,0,0.05) inset; /* Lumière intérieure */
+    transition: transform 0.3s ease;
+}
+
+/* Décoration de coin froissé */
+.note::after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><path fill="%23e8e0d0" d="M100,0 L100,40 C70,30 60,40 30,30 L0,0 Z"/></svg>');
+    background-size: cover;
+    opacity: 0.7;
+}
+
+/* Effet de tache d'humidité subtile */
+.note::before {
+    content: "";
+    position: absolute;
+    bottom: 15%;
+    left: 10%;
+    width: 60%;
+    height: 20%;
+    background: radial-gradient(ellipse at center, rgba(210,190,160,0.1) 0%, rgba(0,0,0,0) 70%);
+    pointer-events: none;
+}
+
+/* Animation très subtile au survol */
+.note:hover {
+    transform: translateY(-2px) rotate(0.5deg);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* Police manuscrite améliorée */
+.manuscrit {
+    font-size: 1.8em;
+    color: #5a3921;
+    text-shadow: 1px 1px 0px rgba(255,255,255,0.5);
+    letter-spacing: 1px;
+}
+
+/* Effet d'encre qui s'est un peu étalée */
+.ecriture {
+    font-family: 'Courier New', Courier, monospace;
+    color: #3a3a3a;
+    text-shadow: 0 0 1px rgba(0,0,0,0.1);
+    line-height: 1.7;
+}
+
+/* Style des dates */
+.date {
+    font-family: ecrituredate;
+    color: #7a5c44;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 3px;
+}
+
+.date::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(to right, #7a5c44, transparent);
+}
+
+/* Boutons audio plus vintage */
+.audio {
+    background: #5a3921;
+    box-shadow: 0 2px 3px rgba(0,0,0,0.2);
+    transition: all 0.2s ease;
+}
+
+.audio:hover {
+    background: #3a2416;
+    transform: scale(1.05);
+}
+
+/* Fond texturé plus visible */
+main::before {
+    opacity: 0.8;
+    background-image: url(../images/paper.avif);
+    background-attachment: fixed;
+    filter: brightness(1.1);
+}
+
+/* Éléments décoratifs */
+.tachecafe {
+    opacity: 0.8;
+    mix-blend-mode: multiply;
+    transition: transform 0.5s ease;
+}
+
+.montagne, .postit {
+    filter: drop-shadow(2px 4px 3px rgba(0,0,0,0.2));
+}
+
+/* Curseur plus discret */
+.circle {
+    background-color: rgba(90, 57, 33, 0.3);
+    border: 1px solid rgba(90, 57, 33, 0.5);
+}
